@@ -11,6 +11,15 @@
 	<link rel='stylesheet' href='/global.css'>
 	<link rel='stylesheet' href='/build/bundle.css'>
 
+	<script>
+		window.onerror = function (msg, url, linenumber) {
+			alert('Error message: ' + msg + '\nURL: ' + url + '\nLine Number: ' + linenumber);
+			return true;
+		}
+	</script>
+
+	<!-- <script>lol()</script> -->
+
 	<script defer src='/build/bundle.js'></script>
 </head>
 
